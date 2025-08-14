@@ -15,6 +15,7 @@ moeda para o nome completo (USD para dólares americanos). '''
 import requests
 
 #biblioteca para ter o nome da moeda a partir do codigo de 3 digitos
+#biblioteca forex_python 
 from forex_python.converter import CurrencyCodes
 
 moeda = input("digite a sigla de uma moeda: ").upper()
