@@ -9,8 +9,12 @@ uma nota de 50, uma nota de 5 e uma nota de 1;
 nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.'''
 
 valor = int(input("Digite a valor do saque: "))
+
+# definindo se o valor é valido
 if valor >= 10 and valor <= 600:
     total = valor
+
+    # verificando as notas de 100
     if valor >= 100:
         if valor%100 == 0:
             notas_100 = valor/100
@@ -20,6 +24,8 @@ if valor >= 10 and valor <= 600:
             total -= notas_100*100
     else:
         notas_100 = 0
+
+    # verificando as notas de 50
     if total >= 50:
         if total%50 == 0:
             notas_50 = total/50
@@ -29,6 +35,8 @@ if valor >= 10 and valor <= 600:
             total -= notas_50*50
     else:
         notas_50 = 0
+
+    # verificando as notas de 10
     if total >= 10:
         if total%10 == 0:
             notas_10 = total/10
@@ -38,6 +46,8 @@ if valor >= 10 and valor <= 600:
             total -= notas_10*10
     else:
         notas_10 = 0
+
+    # verificando as notas de 5
     if total >= 5:
         if total%5 == 0:
             notas_5 = total/5
@@ -47,6 +57,8 @@ if valor >= 10 and valor <= 600:
             total -= notas_5*5
     else:
         notas_5 = 0
+
+    # verificando as notas de 1
     if total%1 == 0:
         notas_1 = total
         total -= total
